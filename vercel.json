@@ -5,11 +5,9 @@
     ],
     "routes": [
       { "src": "/api/(.*)", "dest": "index.js" },
-      { "src": "/(.*)", "dest": "index.js" }
+      { "src": "/(.*)", "dest": "/index.js" }
     ],
-    "public": {
-      "rewrites": [
-        { "source": "/(.*)", "destination": "/public/$1" }
-      ]
+    "static": {
+      "source": "public/**"
     }
   }
