@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+/*------ styling header --------- */
+header {
+  width: 100%;
+  height: 101px;
+  border-bottom: 1px solid #272f35;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+  margin-top: 15px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.container > .logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  gap: 15px;
+}
+
+/*------ styling content -------*/
+.content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-box {
+  display: grid;
+  grid-template-columns: auto;
+  grid-row-gap: 35px;
+  justify-items: center;
+}
+.content-box > h1 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.content-box > p {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+input {
+  width: 437px;
+  height: 44px;
+  border: none;
+  outline: none;
+  padding-left: 11px;
+}
+form > button {
+  width: 106px;
+  height: 44px;
+  background-color: #59b287;
+  border: none;
+  color: white;
+}
+
+#warning {
+  display: none;
+  color: red;
+}
+/*------ styling modal ----- */
+.modal {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+  position: absolute;
+  align-items: center;
+}
+
+.modal-top-box {
+  width: 100%;
+}
+
+.modal-top-box > button {
+  margin-left: 94%;
+  margin-top: 5px;
+  font-size: 25px;
+  border: none;
+  color: white;
+  background-color: #162027;
+}
+
+.modal-box {
+  background-color: red;
+  width: 459px;
+  height: 246px;
+  background-color: #162027;
+}
+
+.modal-bottom-box {
+  width: 100%;
+  height: 212px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.spam-box {
+  position: absolute;
+  text-align: center;
+  font-size: 25px;
+  font-style: normal;
+  color: white;
+}
+
+/*------ tablet responsive ----- */
+@media screen and (max-width: 602px) {
+  form {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    grid-row-gap: 25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    height: 250px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  form {
+    width: 100%;
+  }
+  input {
+    width: 90%;
+  }
+  .modal-box {
+    width: 90%;
+  }
+  .modal-bottom-box {
+    font-size: 19px;
+    width: 100%;
+  }
+}
+body {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #0e151a;
+}
