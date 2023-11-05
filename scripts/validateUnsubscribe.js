@@ -31,7 +31,7 @@ document
                 btn.innerText = 'Subscribe'
             } else {
                 warning.style.display = "block";
-                warning.innerText = "email is not in the subscribers list";
+                warning.innerText = "ემაილი სიაში ვერ მოიძებნა";
                 btn.innerText = 'Subscribe'
             }
         })
